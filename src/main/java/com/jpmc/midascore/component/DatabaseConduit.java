@@ -14,6 +14,11 @@ public class DatabaseConduit {
 
     public void save(UserRecord userRecord) {
         userRepository.save(userRecord);
+
+    }
+    // added to find the id for Task 3
+    public UserRecord findById(long id) {
+        return userRepository.findById(id);
     }
 
 }
